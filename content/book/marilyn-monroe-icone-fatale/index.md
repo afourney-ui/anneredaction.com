@@ -2,6 +2,7 @@
 title: "MARILYN MONROE : ICÔNE FATALE"
 chapo: "Femme fatale du cinéma hollywoodien, Marilyn Monroe a été mannequin, actrice, et surtout une personnalité éternelle, dont le charisme perdure encore aujourd’hui. Norma Jeane Baker a vu le jour il y a tout juste 100 ans, en 1926."
 date: 2026-11-07
+themes: ["culture"]
 media: "Janette"
 draft: false
 ---
