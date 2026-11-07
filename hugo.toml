@@ -1,0 +1,106 @@
+# ============================================================
+#  CONFIGURATION DU SITE
+#  Modifiez ce fichier pour changer le titre, le menu, les liens.
+# ============================================================
+
+# Adresse du site. Elle est remplacée automatiquement lors de la publication
+# (domaine personnalisé déclaré dans GitHub Pages, ou adresse github.io) ;
+# elle ne sert qu'aux tests locaux. Pour forcer l'adresse en ligne, voir README.
+baseURL = "https://yodzeb.github.io/testsite/"
+
+title = "Henri Mote"
+defaultContentLanguage = "fr"
+languageCode = "fr-FR"
+enableRobotsTXT = true
+summaryLength = 45
+
+[taxonomies]
+  tag = "tags"
+  theme = "themes"
+
+# Contenus « voir aussi » calculés automatiquement (thèmes et tags communs)
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = true
+  [[related.indices]]
+    name = "themes"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 30
+
+[markup.goldmark.renderer]
+  unsafe = true # autorise le HTML dans les fichiers Markdown
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
+
+# ------------------------------------------------------------
+#  Informations générales
+# ------------------------------------------------------------
+[params]
+  tagline = "Journaliste indépendant·e"
+  description = "Journaliste pigiste : reportages, enquêtes et portraits. Retrouvez mes articles et mon book."
+  email = "contact@exemple.fr"
+  # Pour activer le formulaire de contact : créez un formulaire sur
+  # https://formspree.io et collez ici son adresse, par exemple
+  # "https://formspree.io/f/abcdwxyz". Laissé vide, la page Contact
+  # affiche simplement un lien e-mail.
+  formspree = ""
+  # Image par défaut pour les partages sur les réseaux (dans static/)
+  ogImage = "/images/partage.svg"
+
+  # Réseaux sociaux : supprimez une ligne pour la masquer.
+  [params.social]
+    linkedin = "https://www.linkedin.com/in/votre-profil"
+    mastodon = "https://mastodon.social/@votre-compte"
+    bluesky = "https://bsky.app/profile/votre-compte"
+    instagram = "https://www.instagram.com/votre-compte"
+
+  # Apparence (réglable depuis l'éditeur, écran « Apparence »)
+  [params.theme]
+    preset = "magazine"
+    accent = "#a3262a"
+    accent_text = "#ffffff"
+    bg = "#faf8f4"
+    text = "#1c1b1a"
+    font_titres = "classique"
+    font_texte = "moderne"
+    radius = 4
+    bouton = "plein"
+    mode = "auto"
+    logo = ""
+    favicon = ""
+
+# ------------------------------------------------------------
+#  Menu principal (géré par l'éditeur)
+# ------------------------------------------------------------
+
+[[menus.main]]
+  name = "Accueil"
+  pageRef = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 20
+
+[[menus.main]]
+  name = "Book"
+  pageRef = "/book"
+  weight = 30
+
+[[menus.main]]
+  name = "À propos"
+  pageRef = "/a-propos"
+  weight = 40
+
+[[menus.main]]
+  name = "Contact"
+  pageRef = "/contact"
+  weight = 50
