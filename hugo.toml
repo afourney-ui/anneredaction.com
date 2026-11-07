@@ -80,6 +80,10 @@ summaryLength = 45
 #  Menu principal (géré par l'éditeur)
 # ------------------------------------------------------------
 
+# ------------------------------------------------------------
+#  Menu principal (géré par l'éditeur)
+# ------------------------------------------------------------
+
 [[menus.main]]
   name = "Accueil"
   pageRef = "/"
@@ -91,7 +95,7 @@ summaryLength = 45
   weight = 20
 
 [[menus.main]]
-  name = "Book"
+  name = "Pressbook"
   pageRef = "/book"
   weight = 30
 
