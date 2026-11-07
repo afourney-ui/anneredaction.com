@@ -8,7 +8,7 @@
 # elle ne sert qu'aux tests locaux. Pour forcer l'adresse en ligne, voir README.
 baseURL = "https://yodzeb.github.io/testsite/"
 
-title = "Henri Mote"
+title = "Anne Fourney"
 defaultContentLanguage = "fr"
 languageCode = "fr-FR"
 enableRobotsTXT = true
@@ -43,9 +43,9 @@ summaryLength = 45
 #  Informations générales
 # ------------------------------------------------------------
 [params]
-  tagline = "Journaliste indépendant·e"
-  description = "Journaliste pigiste : reportages, enquêtes et portraits. Retrouvez mes articles et mon book."
-  email = "contact@exemple.fr"
+  tagline = "Journaliste indépendante"
+  description = "Journaliste pigiste : reportages, enquêtes et portraits."
+  email = "afourney@gmail.com"
   # Pour activer le formulaire de contact : créez un formulaire sur
   # https://formspree.io et collez ici son adresse, par exemple
   # "https://formspree.io/f/abcdwxyz". Laissé vide, la page Contact
@@ -56,10 +56,6 @@ summaryLength = 45
 
   # Réseaux sociaux : supprimez une ligne pour la masquer.
   [params.social]
-    linkedin = "https://www.linkedin.com/in/votre-profil"
-    mastodon = "https://mastodon.social/@votre-compte"
-    bluesky = "https://bsky.app/profile/votre-compte"
-    instagram = "https://www.instagram.com/votre-compte"
 
   # Apparence (réglable depuis l'éditeur, écran « Apparence »)
   [params.theme]
@@ -75,6 +71,10 @@ summaryLength = 45
     mode = "auto"
     logo = ""
     favicon = ""
+
+# ------------------------------------------------------------
+#  Menu principal (géré par l'éditeur)
+# ------------------------------------------------------------
 
 # ------------------------------------------------------------
 #  Menu principal (géré par l'éditeur)
